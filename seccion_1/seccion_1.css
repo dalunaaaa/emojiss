@@ -1,0 +1,30 @@
+.seccion_1 {
+    max-width: 37.5rem;
+    height: 20rem;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 3rem 12rem; 
+/* esta etiqueta le dice a los elemntos hijos que se separen, esta se coloca en la seccion de el padre */
+    gap: 10px;
+}
+
+.seccion_1 h2{
+    /* esta etiqueta se centra solito, sin que le diga el papa (esta es solo horizontal) */
+    align-self: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+
+}
+
+.seccion_1 div{
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: rgb(183, 162, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
